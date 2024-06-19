@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "195430168060",
+    "project_id": "khareedloo-71e41",
+    "storage_bucket": "khareedloo-71e41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195430168060:android:14cc663dd70915c226ee79",
+        "android_client_info": {
+          "package_name": "com.example.khareedloo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXHQoyO-6DclbveVhx6p2FnUulcQ8NlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
