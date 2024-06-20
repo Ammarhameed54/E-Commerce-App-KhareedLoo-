@@ -30,7 +30,7 @@ class _OnboardingState extends State<Onboarding> {
           // Button for Navigating Next
 
           Container(
-            padding: const EdgeInsets.all(25),
+            padding: const EdgeInsets.all(25 ),
             decoration: const BoxDecoration(color: Colors.black, shape: BoxShape.circle),
             child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 50,)
           )
@@ -39,27 +39,3 @@ class _OnboardingState extends State<Onboarding> {
     );
   }
 }
-
-
-
-
-
-// Stack(
-//         children: [
-//           Image.asset("images/uipics/login_pic.jpg", fit: BoxFit.cover, height: 700,),
-//           Padding(
-//             padding: const EdgeInsets.only(top: 300),
-//             child: Column(
-//               mainAxisAlignment: MainAxisAlignment.center,
-//               children: [
-//                  Padding(
-//                    padding: const EdgeInsets.only(left: 20),
-//                    child: Text("Explore\nThe Best\nProducts", style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),),
-//                  ),
-                 
-//               ],
-//             ),
-//           )
-         
-//         ],
-//       )
