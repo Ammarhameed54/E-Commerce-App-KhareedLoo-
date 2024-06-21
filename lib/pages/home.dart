@@ -72,6 +72,8 @@ class _HomeState extends State<Home> {
               ],
             ),
 
+            const SizedBox(height: 20,),
+
             // Categories Container  
             Container(
               margin: const EdgeInsets.only(left: 20),
@@ -83,7 +85,76 @@ class _HomeState extends State<Home> {
                 itemBuilder: (context, index){
                   return CategoryTile(image: categories[index]);
               }),
-            )
+            ),
+            const SizedBox(height: 15,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("All Products", style: AppWidget.semiboldTextstyle(),),
+                Text("see all", style: AppWidget.lightTextStyle(),),
+              ],
+            ),
+
+          // Product Container
+            const SizedBox(height: 20,),
+            Container(
+                  height: 200,
+                  child: ListView(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Container(padding: const EdgeInsets.symmetric(horizontal: 8,),
+                      margin: EdgeInsets.only(right: 20),
+                        decoration:  BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white),
+                        child: Column(
+                          children: [
+                            Image.asset("images/product_images/headphones.png", height: 130, width: 130, fit: BoxFit.cover,),
+                            Text("HeadPhones", style: AppWidget.semiboldTextstyle(),),
+                            Row(
+                              children: [Text("Price: \$40", style: AppWidget.semiboldTextstyle(),),
+                              const SizedBox(width: 30,),
+                              Container(padding: EdgeInsets.all(5),
+                                decoration:  BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                color: Colors.orange
+                              ),
+                                child: const Icon(Icons.add),)
+                              ],
+                            )
+                          ],
+                        ),
+                      ), 
+
+                      // 2nd Product same copy from above and paste it here 
+
+
+                      Container(padding: const EdgeInsets.symmetric(horizontal: 8,),
+                        decoration:  BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.white),
+                        child: Column(
+                          children: [
+                            Image.asset("images/product_images/Watch.jpg", height: 130, width: 130, fit: BoxFit.cover,),
+                            Text("Watch", style: AppWidget.semiboldTextstyle(),),
+                            Row(
+                              children: [Text("Price: \$100", style: AppWidget.semiboldTextstyle(),),
+                              const SizedBox(width: 30,),
+                              Container(padding: EdgeInsets.all(5),
+                                decoration:  BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5),
+                                color: Colors.orange
+                              ),
+                                child: const Icon(Icons.add),)
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                )
            
           ],
         ),
@@ -110,7 +181,7 @@ class CategoryTile extends StatelessWidget {
       ),
 
       // 2nd Method below to show category images in Container
-      
+
       // child: Column(
       //   children: [
       //     Image.asset(image, height: 50, width: 50, fit: BoxFit.cover,)
