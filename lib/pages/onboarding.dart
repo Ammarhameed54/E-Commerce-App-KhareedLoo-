@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khareedloo/pages/bottomnav.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -29,10 +30,13 @@ class _OnboardingState extends State<Onboarding> {
 
           // Button for Navigating Next
 
-          Container(
-            padding: const EdgeInsets.all(25 ),
-            decoration: const BoxDecoration(color: Colors.black, shape: BoxShape.circle),
-            child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 50,)
+          InkWell(
+            onTap:()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> const BottomNavBar())),
+            child: Container(
+              padding: const EdgeInsets.all(25 ),
+              decoration: const BoxDecoration(color: Colors.black, shape: BoxShape.circle),
+              child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 50,),
+            ),
           )
         ],
       )
